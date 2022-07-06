@@ -1,4 +1,4 @@
-export function setSection(num) {
+export function getSection(num) {
     const elemements = document.querySelectorAll('.box');
     const elem1 = `span[data-number = "${num}"]`;
     for (let elem of elemements) {
