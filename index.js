@@ -1,9 +1,4 @@
 export function getSection(num) {
-    const elemements = document.querySelectorAll('.box');
-    const elem1 = `span[data-number = "${num}"]`;
-    for (let elem of elemements) {
-        if (elem.dataset == elem1) {
-            return elem.closest('.box').dataset;
-        }
-    }
+   const elem = document.querySelector(`span[data-number = "${num}"]`);
+   return elem.closest('.box').dataset;
 }
